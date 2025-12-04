@@ -22,3 +22,24 @@ start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,2053,2083,2087,2096,8
 --filter-udp=443 --ipset="%LISTS%ipset-all.txt" --hostlist-exclude="%LISTS%list-exclude.txt" --ipset-exclude="%LISTS%ipset-exclude.txt" --dpi-desync=fake --dpi-desync-repeats=6 --dpi-desync-fake-quic="%BIN%quic_initial_www_google_com.bin" --new ^
 --filter-tcp=80,443,%GameFilter% --ipset="%LISTS%ipset-all.txt" --hostlist-exclude="%LISTS%list-exclude.txt" --ipset-exclude="%LISTS%ipset-exclude.txt" --dpi-desync=fake,fakedsplit --dpi-desync-repeats=6 --dpi-desync-fooling=ts --dpi-desync-fakedsplit-pattern=0x00 --dpi-desync-fake-tls="%BIN%tls_clienthello_www_google_com.bin" --new ^
 --filter-udp=%GameFilter% --ipset="%LISTS%ipset-all.txt" --ipset-exclude="%LISTS%ipset-exclude.txt" --dpi-desync=fake --dpi-desync-autottl=2 --dpi-desync-repeats=12 --dpi-desync-any-protocol=1 --dpi-desync-fake-unknown-udp="%BIN%quic_initial_www_google_com.bin" --dpi-desync-cutoff=n3
+roblox.com
+www.roblox.com
+rbxcdn.com
+rbxinfra.net
+rbxtrk.com
+roblox.co.uk
+roblox.us
+roblox.de
+roblox.fr
+roblox.jp
+roblox.tv
+rblx.org
+rbx.com
+rbxcdn.com
+roblox-api.arkoselabs.co
+roblox.com
+robloxlabs.com
+d1unuk07s6td74.cloudfront.net
+roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
+roblox-poc.global.ssl.fastly.net
+robloxcorp.s.llnwi.net
